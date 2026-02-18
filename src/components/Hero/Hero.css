@@ -1,0 +1,38 @@
+.hero-main{
+    display: flex;
+    background-color: rgb(38, 8, 130);
+    
+}
+
+.left{
+    /* background-color: red; */
+    height: 700px;
+    width: 50%;
+}
+
+.right{
+    /* background-color: blue; */
+    width: 50%;
+    height: 700px;
+}
+
+.name-section{
+    margin-left: 300px;
+    margin-top: 200px;
+}
+
+.name-section h1{
+   font-size: 50px;
+   font: 400;
+   font-weight: bolder;
+   color: white;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   
+}
+
+.name-section h2{
+    margin: 0px;
+    font-size: 30px;
+    color: white;
+   
+}

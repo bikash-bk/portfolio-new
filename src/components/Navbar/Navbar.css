@@ -1,0 +1,65 @@
+.main{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(32, 33, 33);
+    color: white;
+    padding: 10px;
+    
+}
+
+
+
+.name{
+    margin-top: 5px;
+}
+
+.name span{
+    font-size: large;
+    font: bolder;
+    
+    
+
+
+}
+
+.main-ul ul{
+    display: flex;
+    gap: 50px;
+    padding: 0;
+    margin: 7px;
+    
+}
+
+
+
+.main-ul ul li{
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+.main-ul li:hover{
+    color: blueviolet;
+    cursor: pointer;
+}
+
+.linkdln{
+    color: white;
+}
+
+.github{
+    color: white;
+}
+
+.github:hover{
+    cursor: pointer;
+    color: blueviolet;
+    
+
+}
+
+.linkdln:hover{
+    cursor: pointer;
+    color: blueviolet;
+}
+
