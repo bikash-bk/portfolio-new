@@ -1,8 +1,54 @@
-.hero-main{
-    display: flex;
-    background-color: rgb(38, 8, 130);
-    
+.hero-bg {
+  position: relative;
+height: 700px;
+
+  background-color: #050816;
+  overflow: hidden;
 }
+
+/* GRID LAYER */
+.hero-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(to right, #4f4f4f2e 1px, transparent 1px),
+    linear-gradient(to bottom, #4f4f4f2e 1px, transparent 1px);
+
+  background-size: 14px 24px;
+
+  /* top fade like your image */
+  -webkit-mask-image: radial-gradient(
+    ellipse 60% 50% at 50% 0%,
+    #000 70%,
+    transparent 100%
+  );
+  mask-image: radial-gradient(
+    ellipse 60% 50% at 50% 0%,
+    #000 70%,
+    transparent 100%
+  );
+
+  pointer-events: none;
+}
+
+/* PURPLE LEFT GRADIENT GLOW */
+.hero-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at left, #6d28d955, transparent 40%);
+  pointer-events: none;
+}
+
+
+
+
+
+
+
+
 
 .left{
     /* background-color: red; */
@@ -35,4 +81,12 @@
     font-size: 30px;
     color: white;
    
+}
+
+.desc{
+    color: white;
+    margin-left: 300px;
+    margin-top: 30px;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
 }

@@ -4,7 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => {
   return (
-    <div className='hero-main'>
+    <div className='hero-bg'>
       
       <div className='left'>
         <div className='name-section'>
@@ -26,10 +26,14 @@ const Hero = () => {
               ]}
               speed={50}
               repeat={Infinity}
+              style={{color:"blueviolet"}}
+             
             />
           </h2>
 
         </div>
+
+        <p className='desc'>I am a full-stack developer for building scalable web applications. Skilled in both front-end and back-end development, I specialize in the MERN stack and other modern technologies to create seamless user experiences and efficient solutions.</p>
       </div>
 
       <div className='right'>dferf</div>
