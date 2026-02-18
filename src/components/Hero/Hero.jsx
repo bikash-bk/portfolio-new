@@ -1,10 +1,11 @@
 import React from 'react'
 import './Hero.css'
 import { TypeAnimation } from 'react-type-animation';
+import profile2 from '../../assets/profile.jpg'
 
 const Hero = () => {
   return (
-    <div className='hero-bg'>
+    <div className='hero-main'>
       
       <div className='left'>
         <div className='name-section'>
@@ -26,17 +27,16 @@ const Hero = () => {
               ]}
               speed={50}
               repeat={Infinity}
-              style={{color:"blueviolet"}}
-             
+              style={{color:"yellow"}}
             />
           </h2>
 
         </div>
-
-        <p className='desc'>I am a full-stack developer for building scalable web applications. Skilled in both front-end and back-end development, I specialize in the MERN stack and other modern technologies to create seamless user experiences and efficient solutions.</p>
       </div>
 
-      <div className='right'>dferf</div>
+      <div className='right'>
+        <img src={profile2} alt="" style={{width:"300px",borderRadius:"50%"}}/>
+      </div>
 
     </div>
   )
