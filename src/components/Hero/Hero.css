@@ -1,8 +1,9 @@
 .hero-main{
     display: flex;
-    background: #020024;
-background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+   
 }
+
+
 
 .left{
     /* background-color: red; */
@@ -35,4 +36,27 @@ background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, 
     font-size: 30px;
     color: white;
    
+}
+.desc{
+    font-size: larger;
+    color: rgb(188, 185, 185);
+}
+
+.hero-button{
+    padding: 15px;
+    width: 200px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: none;
+    font-size: larger;
+    background: blueviolet;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font: bolder;
+    cursor: pointer;
+    box-shadow: inset;
+}
+
+.hero-button:hover{
+    scale:calc(1.05);
 }

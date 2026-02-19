@@ -1,51 +1,85 @@
-import React from 'react'
-import './Navbar.css'
+import React, { useState } from "react";
+import "./Navbar.css";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { PiLinkedinLogoBold } from 'react-icons/pi';
+import { PiLinkedinLogoBold } from "react-icons/pi";
 
 const Navbar = () => {
+  const [active, setActive] = useState("");
+
+  const scrollTosection = (id) => {
+
+    setActive(id);
+
+    const element = document.getElementById(id);
+
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
   return (
-   <>
-   <div className='main' >
-    <div className='name'>
-      <span style={{color:"blue"}} >&lt;</span>
-      <span >Bikash</span>
-      <span style={{color:"blue"}} >/</span>
-      <span>Kumar</span>
-      <span style={{color:"blue"}} >&gt;</span>
-    </div>
+    <>
+      <div className="main">
+        <div className="name">
+          <span style={{ color: "blue" }}>&lt;</span>
 
-    <div className='main-ul'>
-      <ul >
-        <li>About</li>
-        <li>Skills</li>
-        <li>Experience</li>
-        <li>project</li>
-        <li>education</li>
-      </ul>
-    </div>
+          <span style={{ color: "yellow", fontSize: "20px" }}>
+            &nbsp;Bikash
+          </span>
+          <span style={{ color: "blue" }}>&nbsp;/</span>
+          <span>&nbsp;Kumar</span>
+          <span style={{ color: "blue" }}>&nbsp;&gt;</span>
+        </div>
 
-    <div className='main-right'>
-      <a href="https://github.com/bikash-bk"
-      target='_blank'>
+        <div className="main-ul">
+          <ul>
+            <li onClick={() => scrollTosection("about") } 
+            style={{color:active==="about"?"blueViolet":""}}
+            >About</li>
 
-      <FaGithub className='github'  size={24} style={{marginTop:"10px"  }}/>
+            <li onClick={() => scrollTosection("skills")}
+             style={{color:active==="skills"?"blueViolet":""}}
+             >Skills</li>
 
-      </a>
+            <li onClick={() => scrollTosection("experience")}
+             style={{color:active==="experience"?"blueViolet":""}}
+             >Experience</li>
 
-      <a href="https://www.linkedin.com/in/bikash-das-436425297"
-      target='_blank'>
+            <li onClick={() => scrollTosection("project")}
+             style={{color:active==="project"?"blueViolet":""}}
+             >project</li>
 
-      <FaLinkedin className='linkdln' size={24} style={{marginTop:"10px" , paddingLeft:"20px"}}/>
+            <li onClick={() => scrollTosection("education")}
+             style={{color:active==="education"?"blueViolet":""}}
+             >education</li>
 
-      </a>
-      
+          </ul>
+        </div>
 
-    </div>
-   </div>
-   
-   </>
-  )
-}
+        <div className="main-right">
+          <a href="https://github.com/bikash-bk" target="_blank">
+            <FaGithub
+              className="github"
+              size={24}
+              style={{ marginTop: "10px" }}
+            />
+          </a>
 
-export default Navbar
+          <a
+            href="https://www.linkedin.com/in/bikash-das-436425297"
+            target="_blank"
+          >
+            <FaLinkedin
+              className="linkdln"
+              size={24}
+              style={{ marginTop: "10px", paddingLeft: "20px" }}
+            />
+          </a>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Navbar;

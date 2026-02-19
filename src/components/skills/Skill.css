@@ -1,0 +1,42 @@
+
+.skill-container{
+   justify-items: center;
+   
+
+    
+}
+.skill-heading{
+    font-size: 40px;
+    color: white;
+    padding: 0;
+    margin-bottom: 0;
+   
+}
+.hr{
+    height: 6px;
+    width: 150px;
+    background-color: yellow;
+    
+    margin-top: 0;
+}
+
+.skill-desc{
+   margin-left: 400px;
+   font-size: 20px;
+   font: bolder;
+   color: rgb(241, 202, 202);
+}
+
+.skills-sections{
+    margin-top: 60px;
+    display:flex;
+   
+}
+
+.skills-section{
+    background-color: red;
+    width: 100px;
+    height: 200px;
+     margin-left: 50px;
+     margin-top: 20px;
+}
