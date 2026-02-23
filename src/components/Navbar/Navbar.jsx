@@ -35,7 +35,7 @@ const Navbar = () => {
         <div className="main-ul">
           <ul>
             <li onClick={() => scrollTosection("about") } 
-            style={{color:active==="about"?"blueViolet":""}}
+            
             >About</li>
 
             <li onClick={() => scrollTosection("skills")}
@@ -48,11 +48,11 @@ const Navbar = () => {
 
             <li onClick={() => scrollTosection("project")}
              style={{color:active==="project"?"blueViolet":""}}
-             >project</li>
+             >Projects</li>
 
             <li onClick={() => scrollTosection("education")}
              style={{color:active==="education"?"blueViolet":""}}
-             >education</li>
+             >Education</li>
 
           </ul>
         </div>

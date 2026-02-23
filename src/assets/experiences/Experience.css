@@ -1,0 +1,87 @@
+.experience-tittle{
+    justify-items: center;
+    margin-top: 70px;
+}
+
+.exp-hr{
+    height: 5px;
+    width: 250px;
+    background-color: yellow;
+    
+    margin-top: 0;
+}
+
+.exp-conatiner{
+    position: relative;
+    
+    width: 900px;
+    
+    margin-left: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+    gap: 100px;
+    top: 0;
+    z-index: 1;
+    
+   
+}
+
+.line {
+  position: absolute;
+  left: 0;
+  transform: translateX(-50%);
+  width: 4px;         
+  background-color: white;
+  height: 90%;
+  z-index: -1;
+  
+}
+
+
+@media (min-width: 640px) {
+  .line {
+    left: 50%;
+    transform: translateX(0);
+  }
+}
+
+.exp-conatiner1{
+   margin-left: 330px;
+    height: 500px;
+    width: 500px;
+    background-color: #303031;
+    justify-self: end;
+    margin-right: 70px;
+    border-radius: 20px;
+    border: 2px solid white;
+    
+   
+}
+
+.exp-conatiner2{
+    height: 500px;
+    width: 500px;
+    background-color: orange;
+    margin-left: 70px;
+    border-radius: 20px;
+}
+
+.exp-company-logo{
+    /* background-color: red; */
+    height: 130px;
+    width: 200px;
+align-content: center;
+}
+.exp-company-info{
+    /* background-color: yellow; */
+    width: 100%;
+    color: white;
+}
+
+.exp-company-info p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+     color: rgb(161, 166, 161);
+}
+
+
