@@ -3,7 +3,8 @@ import Navbar from './components/Navbar/Navbar'
 import Hero from './components/Hero/Hero.jsx'
 import './App.css'
 import Skill from './components/skills/Skill.jsx'
-import Experience from './assets/experiences/Experience.jsx'
+import Experience from '../src/components/experiences/Experience.jsx'
+
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
     <Hero/>
     <Skill/>
     <Experience/>
+   
     </div>
     
     

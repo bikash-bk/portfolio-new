@@ -18,7 +18,7 @@ const Experience = () => {
   <div className="line"></div>
   {
     experiences.map((Experience,index)=>(
-<div className='exp-conatiner1'>
+<div className={index %2 ==0 ? "exp-conatiner1": "exp-conatiner2"}>
 
 <div style={{display:"flex"}}>
   <div className='exp-company-logo'>
@@ -29,8 +29,24 @@ const Experience = () => {
     <p style={{margin:"0" , padding:"3px"}}>{Experience.company}</p>
     <p style={{margin:"0" , padding:"2px"}}>{Experience.date}</p>
   </div>
+
 </div>
-  
+<div className='exp-desc'>
+<p>{Experience.desc}</p>
+<p style={{color:"white"}}>Skills:</p>
+{
+  Experience.skills.map((item)=>
+  (
+    
+  <button  className='exp-skills'>{item}</button>
+
+  ))
+}
+
+</div>
+
+
+    
 
 </div>
     ))
