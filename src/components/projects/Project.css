@@ -1,0 +1,34 @@
+.project{
+    margin-top: 150px;
+    background-color: red;
+    height: 700px;
+}
+
+.project-tittle{
+    justify-items: center;
+    margin-top: 70px;
+}
+
+.project-heading{
+    font-size: 40px;
+    color: white;
+    padding: 0;
+    margin-bottom: 0;
+
+}
+
+.project-hr{
+    height: 5px;
+    width: 210px;
+    background-color: yellow;
+    
+    margin-top: 0;
+}
+
+.project-desc{
+    margin-left: 30px;
+   font-size: 20px;
+   font: bolder;
+   color: rgb(241, 202, 202);
+
+}

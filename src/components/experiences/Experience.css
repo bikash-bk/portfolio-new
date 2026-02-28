@@ -50,22 +50,43 @@
    margin-left: 330px;
     height: 500px;
     width: 500px;
-    background-color: #303031;
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    
     justify-self: end;
     margin-right: 70px;
     border-radius: 20px;
     border: 2px solid white;
     
+    transition: all 0.4s ease;
    
+}
+
+.exp-conatiner1:hover{
+    box-shadow: 0 0 5px #00ffff,
+    0 0 10px #00ffff,
+    0 0 20px #ff00ff,
+    0 0 40px #ff00ff;
+    transform: translateY(-5px) scale(1.02); 
 }
 
 .exp-conatiner2{
     height: 500px;
     width: 500px;
-    background-color: #303031;
+  background-color: transparent;
+    backdrop-filter: blur(50px);
     margin-left: 80px;
     border-radius: 20px;
      border: 2px solid white;
+     transition: all 0.4s ease;
+}
+
+.exp-conatiner2:hover{
+    box-shadow: 0 0 5px #00ffff,
+    0 0 10px #00ffff,
+    0 0 20px #ff00ff,
+    0 0 40px #ff00ff;
+    transform: translateY(-5px) scale(1.02); 
 }
 
 .exp-company-logo{

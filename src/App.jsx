@@ -4,6 +4,7 @@ import Hero from './components/Hero/Hero.jsx'
 import './App.css'
 import Skill from './components/skills/Skill.jsx'
 import Experience from '../src/components/experiences/Experience.jsx'
+import Project from './components/projects/Project.jsx'
 
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
     <Hero/>
     <Skill/>
     <Experience/>
+    <Project/>
    
     </div>
     
