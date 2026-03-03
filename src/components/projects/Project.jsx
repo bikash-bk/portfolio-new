@@ -8,7 +8,7 @@ const Project = () => {
         <div className='project-tittle'>
 <h1 className='project-heading'>PROJECTS</h1>
 <div className='project-hr'></div>
-<p className='project-desc '>A collection of my technical skills and expertise honed through various projects and experiences.</p>
+<p className='project-desc '>A showcase of the projects I have worked on, highlighting my skills and experience in various technologies</p>
 
 
         

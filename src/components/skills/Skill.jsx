@@ -13,15 +13,15 @@ const Skill = () => {
 
 <p className='skill-desc '>A collection of my technical skills and expertise honed through various projects and experiences.</p>
 <div className='skill-sections'>
-{skillsInfo.map((item)=>(
+{skillsInfo.map((item,index)=>(
   
-  <div className='skills-section'>
-    <div className='skill-innner-container'>
+  <div className='skills-section' key={index} >
+    <div className='skill-innner-container' >
 <h1 className='skill-inner-conatainer-tittle'>{item.tittle}</h1>
  <div className='skill-inner-conatainer-skills'>
 
   {item.skills.map((skill)=>(
-    <div className='skill-box'> 
+    <div className='skill-box' key={skill.name}> 
     <img src={skill.logo} alt="" />
     <span>{skill.name}</span>
     

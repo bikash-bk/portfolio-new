@@ -150,43 +150,95 @@ export const skillsInfo = [
   },
 ];
 
-
-export const experiences =[
+export const experiences = [
   {
-    id:0,
-    img:novem,
-    role:"Mern stack Developer Training",
-    company:"Novem Control",
-    date:"Apr 2024 - oct 2024",
-    desc:"Developed dynamic and scalable web applications using the MERN stack, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment.",
-    skills:[
-       "HTML",
-        "CSS",
-        "JavaScript",
-        "React JS",
-        "Node JS",
-        "Tailwind CSS",
-        "MongoDb",
-        " Next Js",
-    ]
+    id: 0,
+    img: novem,
+    role: "Mern stack Developer Training",
+    company: "Novem Control",
+    date: "Apr 2024 - oct 2024",
+    desc: "Developed dynamic and scalable web applications using the MERN stack, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment.",
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React JS",
+      "Node JS",
+      "Tailwind CSS",
+      "MongoDb",
+      " Next Js",
+    ],
   },
   {
-    id:1,
-    img:amdox,
-    role:"Fullstack Engineer Intern",
-    company:"Amdox",
-    date:"Jan 2025 - June 2025",
-    desc:"Contributed to innovative projects as a Fullstack Engineer, leading both frontend and backend development using technologies such as HTML, CSS, JavaScript,node js , express js , mongodb Bootstrap, and ReactJS. Worked closely with the team to deliver responsive, high-performance web applications and improve user experience through seamless integration of various technologies.",
-    skills:[
+    id: 1,
+    img: amdox,
+    role: "Fullstack Engineer Intern",
+    company: "Amdox",
+    date: "Jan 2025 - June 2025",
+    desc: "Contributed to innovative projects as a Fullstack Engineer, leading both frontend and backend development using technologies such as HTML, CSS, JavaScript,node js , express js , mongodb Bootstrap, and ReactJS. Worked closely with the team to deliver responsive, high-performance web applications and improve user experience through seamless integration of various technologies.",
+    skills: [
       "HTML",
-        "CSS",
-        "JavaScript",
-        "React JS",
-        "Node JS",
-        "Tailwind CSS",
-        "MongoDB",
-        " Next Js",
-    ]
+      "CSS",
+      "JavaScript",
+      "React JS",
+      "Node JS",
+      "Tailwind CSS",
+      "MongoDB",
+      " Next Js",
+    ],
+  },
+];
 
-  }
-]
+export const projects = [
+  {
+    id: 0,
+    tittle: "Food Delivery App",
+    description:
+      "A powerful and user-friendly React.js application designed for food delivery. functionalities of adding item in the cart section with total amount counting with bill .",
+    image: food_delivery,
+    tags: ["HTML", "CSS", "JavaScript", "React JS", "API"],
+    ithub: "",
+    webapp: "",
+  },
+  {
+    id: 1,
+    title: "AI-Interview-Mocker",
+    description:
+      "A full-stack project named AI Interview Mocker using Next.js, Clerk, PostgreSQL, Prisma, and Google Gemini Flash.",
+    image: ai_interview,
+    tags: ["Nextjs", "PostgreSql", "Express", "HTML", "CSS", "JavaScript"],
+    github: "https://github.com/bikash-bk/Ai-interview-mocker",
+    webapp: "https://ai-interview-mocker-pi-eight.vercel.app/",
+  },
+
+  {
+    id: 2,
+    title: "DocuMind AI",
+    description:
+      "Designed and developed the UI/UX and frontend for an LLM-powered document processing system that retrieved precise clauses from lengthy documents in plain English. Integrated semantic search (FAISS) and backend APIs, enhancing document review efficiency by 40% for 50+ users",
+    image: documeindAi,
+    tags: ["React JS", "API", "HTML", "CSS", "JavaScript", "python", "nodejs"],
+    github: "https://github.com/bikash-bk/LLM-document-processing-system",
+    webapp: "",
+  },
+  {
+    id: 3,
+    title: "Employee Management system ",
+    description:
+      "A full-stack based project for employee management system with having functionalities of supporting multiple tenants.",
+    image: employeeManagement,
+    tags: ["React JS", "Node.js", "mongoDB"],
+    github: "https://github.com/bikash-bk/employee-management",
+    webapp: "",
+  },
+  {
+    id: 4,
+    title: "Saas Notes Application ",
+    description:
+      "a full stack based peoject with functionalities of multiple tenants with protected data so that only authorized tenants will access the data of other notes ",
+    image: saasNotes,
+    tags: ["React JS", "Node.js", "mongoDB"],
+    github: "https://github.com/bikash-bk/sass-notes-application",
+    webapp: "",
+  },
+];

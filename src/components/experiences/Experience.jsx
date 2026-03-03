@@ -18,7 +18,7 @@ const Experience = () => {
   <div className="line"></div>
   {
     experiences.map((Experience,index)=>(
-<div className={index %2 ==0 ? "exp-conatiner1": "exp-conatiner2"}>
+<div className={index %2 ==0 ? "exp-conatiner1": "exp-conatiner2"} key={Experience.id}>
 
 <div style={{display:"flex"}}>
   <div className='exp-company-logo'>
@@ -35,10 +35,10 @@ const Experience = () => {
 <p>{Experience.desc}</p>
 <p style={{color:"white"}}>Skills:</p>
 {
-  Experience.skills.map((item)=>
+  Experience.skills.map((item,index)=>
   (
     
-  <button  className='exp-skills'>{item}</button>
+  <button  className='exp-skills' key={index}>{item}</button>
 
   ))
 }

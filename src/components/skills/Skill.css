@@ -28,7 +28,8 @@
    margin-left: 400px;
    font-size: 20px;
    font: bolder;
-   color: rgb(241, 202, 202);
+   font-weight: bolder;
+   color: rgb(171, 169, 169);
 }
 
 .skill-sections{
