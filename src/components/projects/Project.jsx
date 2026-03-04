@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Project.css'
+import { projects } from '../../Constant'
 
 const Project = () => {
+  const [click ,setClick] = useState()
+  const handleClick=()=>{
+    setClick("hellow world")
+  }
   return (
     <div className='project'>
 
@@ -13,7 +18,19 @@ const Project = () => {
 
         
     </div>
+
+    {projects.map((item)=>(
+      <div className='project-container'>
+        <h1>hellow world</h1>
+        
+      </div>
+    ))}
+
+
     </div>
+
+    
+    
   )
 }
 

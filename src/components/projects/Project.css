@@ -1,7 +1,10 @@
 .project{
     margin-top: 150px;
     background-color: red;
-    height: 700px;
+    height: 1000px;
+    width: 70%;
+    margin-left: 250px;
+    
 }
 
 .project-tittle{
@@ -34,3 +37,4 @@
    
 
 }
+
