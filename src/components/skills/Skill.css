@@ -52,8 +52,9 @@
      color: rgb(161, 166, 161);
      font: bolder;
    
-  background-color: #1a202c;
-   box-shadow: 0 0 20px 1px rgba(130,69,236,0.3);
+    background-color: #1a202c;
+  
+    
  
 }
 .skills-section:hover{

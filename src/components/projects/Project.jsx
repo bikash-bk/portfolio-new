@@ -19,13 +19,22 @@ const Project = () => {
         
     </div>
 
-    {projects.map((item)=>(
+    <div style={{display:"grid" ,gridTemplateColumns: "1fr 1fr 1fr" ,marginLeft:"50px"}}>
+      {projects.map((item)=>(
       <div className='project-container'>
-        <h1>hellow world</h1>
+        <div style={{height:"40%" ,justifyContent:"center", alignItems:"center", display:"flex"}}>
+          <img src={item.image} alt="" className='project-section-image' />
+        </div>
+        <div style={{height:"60%"}}></div>
+
+        
         
       </div>
     ))}
 
+    </div>
+
+    
 
     </div>
 
